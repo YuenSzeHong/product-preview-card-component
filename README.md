@@ -7,6 +7,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [Frontend Mentor - Product preview card component solution](#frontend-mentor---product-preview-card-component-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
+    - [Screenshot](#screenshot)
     - [The challenge](#the-challenge)
     - [Links](#links)
   - [My process](#my-process)
@@ -14,6 +15,9 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Author](#author)
 
 ## Overview
+
+### Screenshot
+![image.png](./image.png)
 
 ### The challenge
 
@@ -24,7 +28,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/vanilla-html-css-product-preview-card-47RcJ8dZ75](https://www.frontendmentor.io/solutions/vanilla-html-css-product-preview-card-47RcJ8dZ75)
+
+- Live solution URL: [https://yuenszehong.github.io/product-preview-card-component/](https://yuenszehong.github.io/product-preview-card-component/)
 
 ## My process
 
