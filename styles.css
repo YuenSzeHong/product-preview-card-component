@@ -1,0 +1,237 @@
+/* 
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) 
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  display: grid;
+  margin: 0;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+picture {
+  /* focus center, overflow hidden */
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+picture img {
+  content: url("./images/image-product-desktop.jpg");
+}
+
+.card {
+  width: 800px;
+  height: 600px;
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+  border-radius: 10px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+}
+
+.card-body {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discounted {
+  color: var(--dark-cyan);
+  font-size: 3rem;
+}
+
+.original {
+  color: var(--dark-grayish-blue);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.card-title {
+  font-size: 3rem;
+}
+
+.card-text {
+  color: var(--dark-grayish-blue);
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  background-color: var(--dark-cyan);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--dark-grayish-blue);
+}
+
+.button:focus {
+  outline: 1px solid var(--dark-grayish-blue);
+}
+
+.cart-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.attribution {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* mobile 375px */
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 300px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+  }
+
+  picture img {
+    content: url("./images/image-product-mobile.jpg");
+  }
+
+  .category {
+    letter-spacing: 5px;
+    font-size: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-text {
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  picture {
+    border-radius: 10px;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .price {
+    width: 60%;
+  }
+
+  .original {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .discounted {
+    font-size: 1.8rem;
+  }
+
+  .card-body {
+    padding: 1.5rem 1.8rem;
+    font-size: 0.5rem;
+  }
+
+  .cart-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .button {
+    font-size: 0.8rem;
+  }
+
+  .attribution {
+    padding-top: 0;
+    margin: 0 4rem;
+    font-size: 0.5rem;
+  }
+}
